@@ -39,29 +39,31 @@ public class UsingBufferedReader {
         /*
         //-------------- Test reading 100 MB file. --------------------
 
-        StopWatch.start();
-
-        BufferedReader inputStream3= new BufferedReader(new FileReader(DumpDataWriter.input100MB));
-        while (inputStream3.read()!=-1){}
-
-        long duration3 = StopWatch.stop();
-        System.out.println(duration3 + " milsec");
-        
-        inputStream3.close();
-
+        if(filename.equals("input100MB.txt")) {
+	        StopWatch.start();
+	
+	        BufferedReader inputStream3= new BufferedReader(new FileReader(DumpDataWriter.input100MB));
+	        while (inputStream3.read()!=-1){}
+	
+	        long duration3 = StopWatch.stop();
+	        System.out.println(duration3 + " milsec");
+	        
+	        inputStream3.close();
+		}
 
         //-------------- Test reading 1000 MB file. --------------------
 
-
-        StopWatch.start();
-
-        BufferedReader inputStream4= new BufferedReader(new FileReader(DumpDataWriter.input1000MB));
-        while (inputStream4.read()!=-1){}
-
-        long duration4 = StopWatch.stop();
-        System.out.println(duration4 + " milsec");
-        
-        inputStream4.close();
+		if(filename.equals("input1000MB.txt")) {
+	        StopWatch.start();
+	
+	        BufferedReader inputStream4= new BufferedReader(new FileReader(DumpDataWriter.input1000MB));
+	        while (inputStream4.read()!=-1){}
+	
+	        long duration4 = StopWatch.stop();
+	        System.out.println(duration4 + " milsec");
+	        
+	        inputStream4.close();
+	    }
         */
     }
 }
